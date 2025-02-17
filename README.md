@@ -11,8 +11,128 @@ Diodes, which allow current to flow in only one direction, are vital in protecti
 The lab will involve constructing circuits to observe transistor operation and evaluating the effects of varying input voltages on circuit performance.
 
 ### Methods
+#### Instruments
+• A Digital Multimeter
+• A DC Power supply
+• Resistors: 2.2Ω, 270Ω, 1kΩ
+• An LED (any type)
+• A sliding switch (from the Sparkfun inventor’s kit)
+• An electric motor (from the Sparkfun inventor's kit)
+• A NTE 125 diode
+• A 1kΩ trimmer potentiometer
+• A TIP31C transistor
 
 ### Results
+#### Part 1 - LED Driving Circuits
+
+_Measured Resistance_
+|Resistor|Expected (Ω)| Measured (Ω) |
+|---|---|---|
+|$R_1$|  270 | 269.6 |
+|$R_2$| 1000   | 989 |
+|$R_3$|  2.2  | 2.6 |
+
+Measurements in a circuit with an LED directly connected to a switch
+****Figure 3
+
+_Measured voltage at each point with respect to ground (T4)_
+|Test Point|Voltage - Switch On (V)| Voltage - Switch Off (V) |
+|---|---|---|
+|T2|  2.014 | 5.006 |
+|T3| 0.000 | 3.619 |
+
+_Measured voltage across components_
+|Component|Voltage Across - Switch On (V)| Voltage Across - Switch Off (V) |
+|---|---|---|
+|R1|  3.006 | 0.000 |
+|LED1| 1.994   | 0.033 |
+|S1|  0.002  | 0.000 |
+
+_Measured current_
+|Resistor|Current Through - Switch On (mA)| Current Through - Switch Off (mA) |
+|---|---|---|
+|LED1|  11.12 | 0.000 |
+
+
+Measurements on a circuit with an LED connected through a transistor
+****Figure 4
+
+_Measured voltage at each point with respect to ground (T4)_
+|Test Point|Voltage - Switch On (V)| Voltage - Switch Off (V) |
+|---|---|---|
+|T2|  1.995 | 4.997 |
+|T3 (VCE)| 0.021 | 3.613 |
+|T5 (VBE)|  0.694 | 0.001 |
+|T6| 5.003 | 0.010 |
+
+_Measured voltage across components_
+|Component|Voltage Across - Switch On (V)| Voltage Across - Switch Off (V) |
+|---|---|---|
+|R1|  2.999 | 0.000 |
+|LED1| 1.979   | 1.384 |
+|R2|  4.306  | 0.000 |
+|S1|  0.000  | 5.000 |
+
+_Measured current_
+|Resistor|Current Through - Switch On (mA)| Current Through - Switch Off (mA) |
+|---|---|---|
+|LED1 (IC)|  10.89 | 0.010 |
+|R2 (IB)|  4.350 | 0.000 |
+
+
+Controlling LED current through a transistor
+****Figure 5
+
+_Measured voltage at each point with respect to ground (T4)_
+|Test Point|Voltage - Dim LED (V)| Voltage - Midpoint 1 (V) | Voltage - Midpoint 2 (V) | Voltage - Bright LED (V) |
+|---|---|---|---|---|
+|T2|  4.920 | 4.728 | 4.255 | 1.937 |
+|T3 (VCE)| 3.329 | 3.077 | 2.542 | 0.097 |
+|T5 (VBE)|  0.530 | 0.562 | 0.587 | 0.628 |
+|T6| 0.534 | 0.573 | 0.613 | 0.792 |
+
+_Measured voltage across components_
+|Component|Voltage - Dim LED (V)| Voltage - Midpoint 1 (V) | Voltage - Midpoint 2 (V) | Voltage - Bright LED (V) |
+|---|---|---|---|---|
+|R1|  0.076 | 0.268 | 0.729 | 3.056 |
+|LED1| 1.592   | 1.652 | 1.713 | 1.838 |
+|R2|  0.003  | 0.011 | 0.026 | 0.162 |
+
+
+_Measured current_
+|Resistor|Current Through - Dim LED (mA)| Current Through - Midpoint 1 (mA) | Current Through - Midpoint 2 (mA) | Current Through - Bright LED (mA) |
+|---|---|---|---|---|
+|LED1 (IC)|  0.04 | 1.02 | 2.79 | 11.29 |
+|R2 (IB)|  0.02 | 0.03 | 0.04 | 0.18 |
+|Gain (IC/IB)|  2 | 34 | 69.75 | 62.7 |
+
+
+#### Part 2 - Motor Driving Circuit
+Controlling motor current and speed using a transistor
+
+_Measured voltage at each point with respect to ground (T4)_
+|Test Point|Voltage - Slow Motor (V)| Voltage - Midpoint 1 (V) | Voltage - Midpoint 2 (V) | Voltage - Fast Motor (V) |
+|---|---|---|---|---|
+|T2|  4.920 | 4.728 | 4.255 | 1.937 |
+|T3 (VCE)| 3.329 | 3.077 | 2.542 | 0.097 |
+|T5 (VBE)|  0.530 | 0.562 | 0.587 | 0.628 |
+|T6| 0.534 | 0.573 | 0.613 | 0.792 |
+
+_Measured voltage across components_
+|Component|Voltage - Slow Motor (V)| Voltage - Midpoint 1 (V) | Voltage - Midpoint 2 (V) | Voltage - Fast Motor (V) |
+|---|---|---|---|---|
+|R1|  0.076 | 0.268 | 0.729 | 3.056 |
+|LED1| 1.592   | 1.652 | 1.713 | 1.838 |
+|R2|  0.003  | 0.011 | 0.026 | 0.162 |
+
+
+_Measured current_
+|Resistor|Current Through - Slow Motor (mA)| Current Through - Midpoint 1 (mA) | Current Through - Midpoint 2 (mA) | Current Through - Fast Motor (mA) |
+|---|---|---|---|---|
+|LED1 (IC)|  0.04 | 1.02 | 2.79 | 11.29 |
+|R2 (IB)|  0.02 | 0.03 | 0.04 | 0.18 |
+|Gain (IC/IB)|  2 | 34 | 69.75 | 62.7 |
+
 
 
 ### Discussion
