@@ -32,7 +32,9 @@ _Measured Resistance_
 |$R_2$| 1000   | 989 |
 |$R_3$|  2.2  | 2.6 |
 
-Measurements in a circuit with an LED directly connected to a switch
+##### Measurements in a circuit with an LED directly connected to a switch
+
+
 ![Figure 3](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%203.png)
 
 _Measured voltage at each point with respect to ground (T4)_
@@ -54,7 +56,9 @@ _Measured current_
 |LED1|  11.12 | 0.000 |
 
 
-Measurements on a circuit with an LED connected through a transistor
+##### Measurements on a circuit with an LED connected through a transistor
+
+
 ![Figure 4](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%204.png)
 
 _Measured voltage at each point with respect to ground (T4)_
@@ -80,7 +84,9 @@ _Measured current_
 |R2 (IB)|  4.350 | 0.000 |
 
 
-Controlling LED current through a transistor
+##### Controlling LED current through a transistor
+
+
 ![Figure 5](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%205.png)
 
 _Measured voltage at each point with respect to ground (T4)_
@@ -108,7 +114,10 @@ _Measured current_
 
 
 #### Part 2 - Motor Driving Circuit
-Controlling motor current and speed using a transistor
+##### Controlling motor current and speed using a transistor
+
+
+![Figure 6](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%206.png)
 
 _Measured voltage at each point with respect to ground (T4)_
 |Test Point|Voltage - Slow Motor (V)| Voltage - Midpoint 1 (V) | Voltage - Midpoint 2 (V) | Voltage - Fast Motor (V) |
