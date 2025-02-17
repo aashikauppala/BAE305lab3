@@ -33,7 +33,7 @@ _Measured Resistance_
 |$R_3$|  2.2  | 2.6 |
 
 Measurements in a circuit with an LED directly connected to a switch
-![Figure 3](https://github.com/aashikauppala/BAE-305-lab2/blob/main/Figure%201.png)
+![Figure 3](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%203.png)
 
 _Measured voltage at each point with respect to ground (T4)_
 |Test Point|Voltage - Switch On (V)| Voltage - Switch Off (V) |
@@ -55,7 +55,7 @@ _Measured current_
 
 
 Measurements on a circuit with an LED connected through a transistor
-![Figure 4]()
+![Figure 4](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%204.png)
 
 _Measured voltage at each point with respect to ground (T4)_
 |Test Point|Voltage - Switch On (V)| Voltage - Switch Off (V) |
@@ -81,7 +81,7 @@ _Measured current_
 
 
 Controlling LED current through a transistor
-![Figure 5]()
+![Figure 5](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%205.png)
 
 _Measured voltage at each point with respect to ground (T4)_
 |Test Point|Voltage - Dim LED (V)| Voltage - Midpoint 1 (V) | Voltage - Midpoint 2 (V) | Voltage - Bright LED (V) |
