@@ -218,7 +218,7 @@ _Measured current_
 
 ### Discussion
 #### Part 1
-_Discussion question 1: How does the current through the LED compare between circuits 1 and 2?_
+_How does the current through the LED compare between circuits 1 and 2?_
 
 In Circuit 1, where the LED is directly connected to a switch, the current is solely dependent on the resistor value and the voltage source.
 
@@ -227,21 +227,21 @@ In Circuit 2, where the LED is controlled by a transistor, the current is regula
 This results in a more stable and predictable current through the LED, as opposed to the direct switch circuit where variations in source voltage can lead to flucuating current.
 
 
-_Discussion question 2: How does your measured VCE compare to the one listed in the datasheet? Do you think we are operating this transistor in the saturation region?_
+_How does your measured VCE compare to the one listed in the datasheet? Do you think we are operating this transistor in the saturation region?_
 
 The datasheet specifies a maximum VCE (saturation) of 1.2V. Our measured VCE should ideally be lower than this value when the transistor is fully saturated.
 If our observed VCE is close to this threshold or below, it indicates that the transistor is operating in the saturation region. 
 Adjusting the power supply should further confirm this by showing minimal changes in IC when VCE is in saturation.
 
 #### Part 2
-_Discussion question 1: What is the voltage drop (VCE) across the transistor (Q1) when the motor is in the Fast setting? How does this compare with the circuit that drove the LED?_
+_What is the voltage drop (VCE) across the transistor (Q1) when the motor is in the Fast setting? How does this compare with the circuit that drove the LED?_
 
 The voltage drop across Q1 in the motor circuit at the Fast setting should be compared to the LED circuit. 
 Generally, the motor circuit requires higher current than the LED circuit, leading to a slightly higher VCE in the motor circuit.
 However, both should remain within the saturation region if the transistor is operating correctly.
 
 
-_Discussion question 2: How much current is going through the motor in the Fast setting? How does this compare to the current that the LED circuit used?_
+_How much current is going through the motor in the Fast setting? How does this compare to the current that the LED circuit used?_
 
 The motor typically draws significantly more current than the LED circuit due to its mechanical load. 
 If the switch used in the LED circuit was barely sufficient to handle LED current, it would be inadequate for the motor, necessitating the use of a transistor switch.
