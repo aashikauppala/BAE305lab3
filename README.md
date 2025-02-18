@@ -59,11 +59,11 @@ Next, build the circuit in Figure 2.
 
 ![Figure 2 Breadboard](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%204%20Breadboard.jpg)
 
-Using the DMM, measure the voltage at T2, T3 (V<sub>CE<sub>), T5 (V<sub>BE<sub>), and T6 with respect to ground (T4), and record the readings with the switch both on and off.
+Using the DMM, measure the voltage at T2, T3 (V<sub>CE</sub>), T5 (V<sub>BE</sub>), and T6 with respect to ground (T4), and record the readings with the switch both on and off.
 
 Next, measure the voltage across R1, LED1, R2, and S1 using the DMM, again recording the values for both switch positions.
 
-Finally, measure the current by interrupting the circuit and inserting the DMM in series as a current meter at both LED1 (I<sub>C<sub>) and R2 (I<sub>B<sub>). Record the measurements with the switch both on and off.
+Finally, measure the current by interrupting the circuit and inserting the DMM in series as a current meter at both LED1 (I<sub>C</sub>) and R2 (I<sub>B</sub>). Record the measurements with the switch both on and off.
 
 ##### Controlling LED current through a transistor
 Next, build the circuit in Figure 3.
