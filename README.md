@@ -12,15 +12,61 @@ The lab will involve constructing circuits to observe transistor operation and e
 
 ### Methods
 #### Instruments
-• A Digital Multimeter
+• A Digital Multimeter (DMM)
+
 • A DC Power supply
+
 • Resistors: 2.2Ω, 270Ω, 1kΩ
+
 • An LED (any type)
+
 • A sliding switch (from the Sparkfun inventor’s kit)
+
 • An electric motor (from the Sparkfun inventor's kit)
+
 • A NTE 125 diode
+
 • A 1kΩ trimmer potentiometer
+
 • A TIP31C transistor
+
+#### Part 1 - LED Driving Circuits
+Begin by using the DMM to measure the true resistance of each resistor used in the lab.
+
+##### Measurements in a circuit with an LED directly connected to a switch
+Next, build the circuit in Figure 1.
+
+![Figure 1](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%203.png)
+
+Using the DMM, measure the voltage at T2 and T3 with respect to ground (T4), and record the readings with the switch both on and off.
+
+Next, measure the voltage across R1, LED1, and S1 using the DMM, again recording the values for both switch positions.
+
+Finally, measure the current by interrupting the circuit and inserting the DMM in series as a current meter. Record the measurements with the switch both on and off.
+
+##### Measurements on a circuit with an LED connected through a transistor
+Next, build the circuit in Figure 2.
+
+![Figure 2](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%204.png)
+
+Using the DMM, measure the voltage at T2, T3 (VCE), T5 (VBE), and T6 with respect to ground (T4), and record the readings with the switch both on and off.
+
+Next, measure the voltage across R1, LED1, R2, and S1 using the DMM, again recording the values for both switch positions.
+
+Finally, measure the current by interrupting the circuit and inserting the DMM in series as a current meter. Record the measurements with the switch both on and off.*****
+
+##### Controlling LED current through a transistor
+Next, build the circuit in Figure 3.
+
+![Figure 3](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%205.png)
+
+#### Part 2 - Motor Driving Circuit
+##### Controlling motor current and speed using a transistor
+Measure voltage at each point with respect to ground
+Next, build the circuit in Figure 4
+
+![Figure 4](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%206.png)
+
 
 ### Results
 #### Part 1 - LED Driving Circuits
@@ -33,9 +79,6 @@ _Measured Resistance_
 |$R_3$|  2.2  | 2.6 |
 
 ##### Measurements in a circuit with an LED directly connected to a switch
-
-
-![Figure 3](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%203.png)
 
 _Measured voltage at each point with respect to ground (T4)_
 |Test Point|Voltage - Switch On (V)| Voltage - Switch Off (V) |
@@ -57,9 +100,6 @@ _Measured current_
 
 
 ##### Measurements on a circuit with an LED connected through a transistor
-
-
-![Figure 4](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%204.png)
 
 _Measured voltage at each point with respect to ground (T4)_
 |Test Point|Voltage - Switch On (V)| Voltage - Switch Off (V) |
@@ -86,8 +126,6 @@ _Measured current_
 
 ##### Controlling LED current through a transistor
 
-
-![Figure 5](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%205.png)
 
 _Measured voltage at each point with respect to ground (T4)_
 |Test Point|Voltage - Dim LED (V)| Voltage - Midpoint 1 (V) | Voltage - Midpoint 2 (V) | Voltage - Bright LED (V) |
@@ -117,8 +155,6 @@ _Measured current_
 ##### Controlling motor current and speed using a transistor
 
 
-![Figure 6](https://github.com/aashikauppala/BAE305lab3/blob/main/Lab%203%20Figure%206.png)
-
 _Measured voltage at each point with respect to ground (T4)_
 |Test Point|Voltage - Slow Motor (V)| Voltage - Midpoint 1 (V) | Voltage - Midpoint 2 (V) | Voltage - Fast Motor (V) |
 |---|---|---|---|---|
@@ -133,7 +169,6 @@ _Measured voltage across components_
 |R1|  0.076 | 0.268 | 0.729 | 3.056 |
 |LED1| 1.592   | 1.652 | 1.713 | 1.838 |
 |R2|  0.003  | 0.011 | 0.026 | 0.162 |
-
 
 _Measured current_
 |Resistor|Current Through - Slow Motor (mA)| Current Through - Midpoint 1 (mA) | Current Through - Midpoint 2 (mA) | Current Through - Fast Motor (mA) |
@@ -161,7 +196,7 @@ The datasheet specifies a maximum VCE (saturation) of 1.2V. Our measured VCE sho
 If our observed VCE is close to this threshold or below, it indicates that the transistor is operating in the saturation region. 
 Adjusting the power supply should further confirm this by showing minimal changes in IC when VCE is in saturation.
 
-#### Part2
+#### Part 2
 _Discussion question 1: What is the voltage drop (VCE) across the transistor (Q1) when the motor is in the Fast setting? How does this compare with the circuit that drove the LED?_
 
 The voltage drop across Q1 in the motor circuit at the Fast setting should be compared to the LED circuit. 
